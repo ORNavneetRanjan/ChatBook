@@ -71,7 +71,6 @@ The frontend handles:
 | Home.jsx       | Main chat UI (handles user input, displays messages) |
 | main.js        | Handles API integration with Google Gemini    |
 | App.jsx        | Manages routing and app structure             |
-| localStorage.js| Utility functions to save/load chat history   |
 
 #### 2️⃣ Backend (Google Gemini API Integration)
 
