@@ -353,7 +353,7 @@ export const sendMessageToGemini = async (userMessage) => {
   const chatHistory = loadChatHistory();
 
   // Format history for Gemini API (excluding too many old messages)
-  const formattedHistory = chatHistory.slice(-10).map((msg) => ({
+  const formattedHistory = chatHistory.map((msg) => ({
     role: msg.sender === "user" ? "user" : "model",
     parts: [{ text: msg.text }],
   }));
