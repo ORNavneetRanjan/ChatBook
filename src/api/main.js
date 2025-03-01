@@ -358,9 +358,10 @@ export const sendMessageToGemini = async (userMessage) => {
     parts: [{ text: msg.text }],
   }));
 
+  const fullHistory = [...pretrainingData, ...formattedHistory];
   const chatSession = model.startChat({
     generationConfig,
-    history: formattedHistory,
+    history: fullHistory,
   });
 
   try {
