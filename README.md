@@ -116,6 +116,36 @@ The chat history is stored locally in `localStorage`, allowing users to persist 
 | LocalStorage        | Storing conversation history              |
 | Tailwind CSS        | Styling for a modern and responsive UI    |
 
----
 
-Feel free to let me know if you need any more changes or additions!
+User Guide - AI Chat Application
+Welcome to the AI Chat Application! Follow the steps below to get started:
+
+🔗 Access the App
+ChatDSA
+
+🚀 Getting Started
+1️⃣ Open the Application
+Hosted URL: Visit ChatDSA
+
+Local Setup: Run npm run dev and access via http://localhost:5173/
+
+💬 Using the Chat
+2️⃣ Sending a Message
+Type your message and press Send (or hit Enter).
+
+📜 Managing Chat History
+3️⃣ Viewing Past Conversations
+Previous messages are saved automatically in your browser's local storage.
+
+4️⃣ Starting a New Conversation
+Click the "New Conversation" icon (📄) in the top navigation bar.
+
+📱 Device Compatibility
+Works on mobile, tablet, and desktop devices.
+
+⚠️ Troubleshooting
+Ensure a stable internet connection.
+
+Refresh the page if the chat isn’t responding.
+
+Start a new conversation if messages aren’t sending.
