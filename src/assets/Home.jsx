@@ -5,7 +5,7 @@ import {
   saveChatHistory,
   clearChatHistory,
 } from "../api/main";
-import { FiRefreshCw } from "react-icons/fi"; // Import refresh icon
+import { FiRefreshCw } from "react-icons/fi";
 
 export default function Home() {
   const [messages, setMessages] = useState(loadChatHistory());

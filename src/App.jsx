@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./assets/Home";
 import WelcomePage from "./assets/Welocome";
-import Naivbar from "./Components/Naivbar";
 
 export default function App() {
   return (

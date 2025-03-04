@@ -20,10 +20,6 @@ export const clearChatHistory = () => {
   localStorage.removeItem("chatHistory");
 };
 
-// Maintain user input and response state
-let userInputState = "";
-let modelResponseState = ""; // Renamed from responseState
-
 // Initialize Gemini API
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
@@ -345,14 +341,13 @@ const pretrainingData = [
 ];
 
 // Function to send message to Gemini API
-// Function to send message to Gemini API
 export const sendMessageToGemini = async (userMessage) => {
   if (!userMessage.trim()) return "Message cannot be empty.";
 
   // Load previous conversation history
   const chatHistory = loadChatHistory();
 
-  // Format history for Gemini API (excluding too many old messages)
+  // Format history for Gemini API
   const formattedHistory = chatHistory.map((msg) => ({
     role: msg.sender === "user" ? "user" : "model",
     parts: [{ text: msg.text }],
